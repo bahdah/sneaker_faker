@@ -35,10 +35,6 @@ public interface Constants {
     public static String NATURAL_LANG_CLASSIFIER_PASSWORD = "";
     public static String NATURAL_LANG_CLASSIFIER = "";
 
-    // Forecast.io API Key
-    public static String FORECAST_IO_API_KEY = "";
-    public static String CURRENT_LONGITUDE = "41.881832";
-    public static String CURRENT_LATITUDE = "-87.623177";
 
 
 
