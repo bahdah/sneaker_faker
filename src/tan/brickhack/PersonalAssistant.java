@@ -11,6 +11,7 @@ public class PersonalAssistant {
     private CommandClassifier commandClassifier = null;
     private TextToSpeechConverter textToSpeechConverter = null;
     private AudioSpeaker audioSpeaker = null;
+    private String text = null;
 
 
     public PersonalAssistant() {
@@ -29,7 +30,7 @@ public class PersonalAssistant {
         try {
 
             //Introduction
-            String greetings = "Hello. This is a simple vudu magic that determines whether you are a sneakerhead or just a regular person. Just tell me what you would tweet in twitter. ";
+            String greetings = "Hello. This is a simple program that determines whether you are a sneakerhead or just a regular person. Just tell me what you would tweet in twitter. ";
             textToSpeechConverter.convert(greetings,Constants.AUDIO_TYPE_GREETING);
             // Start conversation with a greeting
             audioSpeaker.speak(Constants.AUDIO_TYPE_GREETING);
@@ -42,6 +43,7 @@ public class PersonalAssistant {
 
                 // Convert the recorded query speech into text
                 query = speechToTextConverter.convert();
+                this.text = query;
                 if(!(query.equals(""))){
                     b = false;
                 } else {
@@ -74,6 +76,10 @@ public class PersonalAssistant {
             System.out.println("[DEBUG] " + ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    public String getText(){
+        return this.text;
     }
 
 
