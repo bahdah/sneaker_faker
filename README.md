@@ -7,3 +7,4 @@ Standing in front of a huge line waiting to get his hands on a brand new Jordans
 
 We have used a speech recognition,  speech to text analytics, Natural Language processing techniques to build an app which quantifies your 'Sneakerheads'. We scrapped the twitter data using IBM Watson Twitter Insights and visualized the data to understand the sneakerheads better using dashDb to create a dashboard to visually analyze the data. We then used Speech recognition API to convert the user input and classify using Natural language processor into Sneaker heads and nonsneaker head.
 
+https://devpost.com/software/bh_app2
